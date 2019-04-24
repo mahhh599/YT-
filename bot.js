@@ -47,7 +47,7 @@ client.on('message',async message => {
                   message.guild.channels.find('name', room).send(giveEmbed).then(m => {
                      let re = m.react('الايموجي حق القيفاواي');
                      setTimeout(() => {
-                       let users = m.reactions.get("الايموجي حق القيفاواي").users;
+                       let users = m.reactions.get("🧡").users;
                        let list = users.array().filter(u => u.id !== m.author.id);
                        let gFilter = list[Math.floor(Math.random() * list.length) + 0];
                          if(users.size === 1) gFilter = '**لم يتم التحديد**';
